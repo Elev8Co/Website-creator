@@ -11,7 +11,7 @@ const footerLinks = [
 const socials = [
   { label: 'Instagram', href: 'https://instagram.com', icon: Instagram },
   { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { label: 'Email', href: 'mailto:hello@elev8co.com', icon: Mail },
+  { label: 'Email', href: 'mailto:Elev8.CoServices@gmail.com', icon: Mail },
 ];
 
 export default function Footer() {

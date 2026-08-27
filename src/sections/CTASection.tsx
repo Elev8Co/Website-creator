@@ -27,13 +27,13 @@ export default function CTASection() {
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <PrimaryButton href="mailto:hello@elev8co.com">Book a Call</PrimaryButton>
+              <PrimaryButton href="mailto:Elev8.CoServices@gmail.com">Book a Call</PrimaryButton>
               <a
-                href="mailto:hello@elev8co.com"
+                href="mailto:Elev8.CoServices@gmail.com"
                 className="inline-flex items-center gap-2 text-muted font-medium uppercase tracking-widest text-sm transition-colors duration-200 hover:text-ink"
               >
                 <Mail size={18} strokeWidth={1.5} />
-                hello@elev8co.com
+                Elev8.CoServices@gmail.com
               </a>
             </div>
           </div>
