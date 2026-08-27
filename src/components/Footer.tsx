@@ -20,10 +20,13 @@ export default function Footer() {
       <FadeIn>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
           <div>
-            <a href="#top" className="text-xl md:text-2xl font-black uppercase tracking-tight text-white">
-              Elev8<span className="gradient-text"> Co.</span>
+            <a href="#top" className="flex items-center gap-3">
+              <img src="/logo-circle.png" alt="Elev8 Co." className="h-14 w-14 md:h-16 md:w-16 rounded-full" />
+              <span className="text-xl md:text-2xl font-semibold tracking-tight text-white">
+                Elev8 Co.
+              </span>
             </a>
-            <p className="mt-3 text-[#E6E9EF]/60 font-light max-w-xs">
+            <p className="mt-4 text-[#E6E9EF]/60 font-light max-w-xs">
               Websites and videography built to grow your business and win more customers.
             </p>
           </div>

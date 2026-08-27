@@ -18,8 +18,15 @@ export default function Navbar() {
     <FadeIn delay={0} y={-20} as="header">
       <div className="sticky top-0 z-50 backdrop-blur-md bg-[#0A0A0A]/70 border-b border-white/5">
         <nav className="flex items-center justify-between px-6 md:px-10 py-4 md:py-5">
-          <a href="#top" className="text-xl md:text-2xl font-black uppercase tracking-tight text-white">
-            Elev8<span className="gradient-text"> Co.</span>
+          <a href="#top" className="flex items-center gap-3">
+            <img
+              src="/logo-circle.png"
+              alt="Elev8 Co."
+              className="h-10 w-10 md:h-12 md:w-12 rounded-full flex-shrink-0"
+            />
+            <span className="text-base sm:text-lg md:text-xl font-semibold tracking-tight text-white">
+              Elev8 Co.
+            </span>
           </a>
 
           <div className="hidden md:flex items-center gap-10">
