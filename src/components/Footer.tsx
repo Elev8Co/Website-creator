@@ -9,7 +9,7 @@ const footerLinks = [
 ];
 
 const socials = [
-  { label: 'Instagram', href: 'https://instagram.com', icon: Instagram },
+  { label: 'Instagram', href: 'https://www.instagram.com/elev8_urs/', icon: Instagram },
   { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
   { label: 'Email', href: 'mailto:Elev8.CoServices@gmail.com', icon: Mail },
 ];
