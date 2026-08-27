@@ -10,13 +10,10 @@ export default function MarqueeSection() {
       >
         {tripled.map((item, i) => (
           <div key={i} className="flex items-center">
-            <span className="mx-6 md:mx-10 text-2xl md:text-4xl font-black uppercase tracking-tight text-white/15">
+            <span className="brand-italic mx-6 md:mx-10 text-2xl md:text-4xl font-medium text-white/15">
               {item}
             </span>
-            <span
-              className="h-2 w-2 rounded-full flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg, #7C3AED, #22D3EE)' }}
-            />
+            <span className="h-1.5 w-1.5 rounded-full border border-white/25 flex-shrink-0" />
           </div>
         ))}
       </div>

@@ -3,11 +3,11 @@ import { processSteps } from '../data/process';
 
 export default function ProcessSection() {
   return (
-    <section id="process" className="px-6 md:px-10 py-24 md:py-32 bg-white/[0.02]">
+    <section id="process" className="px-6 md:px-10 py-24 md:py-32 bg-surface">
       <FadeIn delay={0} y={40}>
         <h2
-          className="hero-heading font-black uppercase leading-none tracking-tight text-center"
-          style={{ fontSize: 'clamp(2.5rem, 9vw, 110px)' }}
+          className="hero-heading font-semibold leading-none tracking-tight text-center"
+          style={{ fontSize: 'clamp(2.25rem, 6.5vw, 72px)' }}
         >
           Our Process
         </h2>
@@ -24,16 +24,16 @@ export default function ProcessSection() {
               }}
             >
               <span
-                className="gradient-text font-black leading-none flex-shrink-0"
-                style={{ fontSize: 'clamp(2.5rem, 7vw, 90px)' }}
+                className="brand-italic text-white/30 leading-none flex-shrink-0"
+                style={{ fontSize: 'clamp(2.25rem, 6vw, 72px)' }}
               >
                 {step.number}
               </span>
-              <div className="flex flex-col gap-2 pt-2 sm:pt-4">
-                <h3 className="text-white font-medium uppercase text-xl sm:text-2xl md:text-3xl">
+              <div className="flex flex-col gap-2 pt-2 sm:pt-3">
+                <h3 className="text-ink font-medium uppercase tracking-wide text-lg sm:text-xl md:text-2xl">
                   {step.name}
                 </h3>
-                <p className="text-[#E6E9EF]/60 font-light leading-relaxed max-w-xl text-sm sm:text-base md:text-lg">
+                <p className="text-muted font-light leading-relaxed max-w-xl text-sm sm:text-base md:text-lg">
                   {step.description}
                 </p>
               </div>

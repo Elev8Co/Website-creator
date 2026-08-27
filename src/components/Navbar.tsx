@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <FadeIn delay={0} y={-20} as="header">
-      <div className="sticky top-0 z-50 backdrop-blur-md bg-[#0A0A0A]/70 border-b border-white/5">
+      <div className="sticky top-0 z-50 backdrop-blur-md bg-[#0A0A0A]/70 border-b border-white/10">
         <nav className="flex items-center justify-between px-6 md:px-10 py-4 md:py-5">
           <a href="#top" className="flex items-center gap-3">
             <img
@@ -24,7 +24,7 @@ export default function Navbar() {
               alt="Elev8 Co."
               className="h-10 w-10 md:h-12 md:w-12 rounded-full flex-shrink-0"
             />
-            <span className="text-base sm:text-lg md:text-xl font-semibold tracking-tight text-white">
+            <span className="font-serif text-base sm:text-lg md:text-xl font-semibold tracking-tight text-ink">
               Elev8 Co.
             </span>
           </a>
@@ -34,7 +34,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[#E6E9EF] font-medium uppercase tracking-wider text-sm lg:text-base transition-opacity duration-200 hover:opacity-70"
+                className="text-muted font-medium uppercase tracking-wider text-sm lg:text-base transition-colors duration-200 hover:text-ink"
               >
                 {link.label}
               </a>
@@ -51,7 +51,7 @@ export default function Navbar() {
             type="button"
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen((v) => !v)}
-            className="md:hidden text-white"
+            className="md:hidden text-ink"
           >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -64,7 +64,7 @@ export default function Navbar() {
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-              className="md:hidden overflow-hidden border-t border-white/5"
+              className="md:hidden overflow-hidden border-t border-white/10"
             >
               <div className="flex flex-col gap-6 px-6 py-8">
                 {navLinks.map((link) => (
@@ -72,7 +72,7 @@ export default function Navbar() {
                     key={link.label}
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="text-[#E6E9EF] font-medium uppercase tracking-wider text-lg"
+                    className="text-ink font-medium uppercase tracking-wider text-lg"
                   >
                     {link.label}
                   </a>

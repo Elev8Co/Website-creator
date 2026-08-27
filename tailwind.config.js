@@ -4,7 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Kanit', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        serif: ['"Playfair Display"', 'serif'],
+      },
+      colors: {
+        ink: '#F2EFE9',
+        muted: '#9A9A9E',
+        surface: '#17181B',
       },
     },
   },

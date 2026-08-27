@@ -22,11 +22,11 @@ export default function Footer() {
           <div>
             <a href="#top" className="flex items-center gap-3">
               <img src="/logo-circle.png" alt="Elev8 Co." className="h-14 w-14 md:h-16 md:w-16 rounded-full" />
-              <span className="text-xl md:text-2xl font-semibold tracking-tight text-white">
+              <span className="font-serif text-xl md:text-2xl font-semibold tracking-tight text-ink">
                 Elev8 Co.
               </span>
             </a>
-            <p className="mt-4 text-[#E6E9EF]/60 font-light max-w-xs">
+            <p className="mt-4 text-muted font-light max-w-xs">
               Websites and videography built to grow your business and win more customers.
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[#E6E9EF] font-medium uppercase tracking-wider text-sm transition-opacity duration-200 hover:opacity-70"
+                className="text-ink/80 font-medium uppercase tracking-wider text-sm transition-colors duration-200 hover:text-ink"
               >
                 {link.label}
               </a>
@@ -51,7 +51,7 @@ export default function Footer() {
                 aria-label={label}
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-[#E6E9EF] transition-colors duration-200 hover:bg-white/10"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-muted transition-colors duration-200 hover:border-white/30 hover:text-ink"
               >
                 <Icon size={18} />
               </a>
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 md:mt-14 flex flex-col sm:flex-row justify-between gap-4 text-xs text-[#E6E9EF]/40 uppercase tracking-wider">
+        <div className="mt-10 md:mt-14 flex flex-col sm:flex-row justify-between gap-4 text-xs text-muted/70 uppercase tracking-wider">
           <span>&copy; {new Date().getFullYear()} Elev8 Co. All rights reserved.</span>
           <span>Websites &middot; Videography &middot; Growth</span>
         </div>

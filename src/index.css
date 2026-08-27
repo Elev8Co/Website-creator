@@ -15,21 +15,20 @@ body,
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
+/* Display headings -- echoes the serif wordmark on the Elev8 Co. seal */
 .hero-heading {
-  background: linear-gradient(135deg, #7c3aed 0%, #2563eb 55%, #22d3ee 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Playfair Display', serif;
+  color: #f2efe9;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #7c3aed 0%, #2563eb 55%, #22d3ee 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Editorial italic accent -- used for numerals and small brand flourishes */
+.brand-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #f2efe9;
 }
 
 @keyframes marquee-scroll {
