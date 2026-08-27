@@ -1,65 +1,65 @@
+import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 import FadeIn from '../components/FadeIn';
-import Magnet from '../components/Magnet';
-import ContactButton from '../components/ContactButton';
-
-const navLinks = ['About', 'Price', 'Projects', 'Contact'];
+import PrimaryButton from '../components/PrimaryButton';
+import GhostButton from '../components/GhostButton';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen flex flex-col" style={{ overflowX: 'clip' }}>
-      <FadeIn delay={0} y={-20} as="nav">
-        <div className="flex justify-between px-6 md:px-10 pt-6 md:pt-8">
-          {navLinks.map((link) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
-            >
-              {link}
-            </a>
-          ))}
+    <section
+      id="top"
+      className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 py-32 md:py-40 overflow-hidden"
+    >
+      <div
+        className="pointer-events-none absolute -top-40 -left-40 h-[420px] w-[420px] rounded-full blur-[120px] opacity-30"
+        style={{ background: '#7C3AED' }}
+      />
+      <div
+        className="pointer-events-none absolute -bottom-40 -right-40 h-[420px] w-[420px] rounded-full blur-[120px] opacity-30"
+        style={{ background: '#22D3EE' }}
+      />
+
+      <FadeIn delay={0} y={20}>
+        <div className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs sm:text-sm uppercase tracking-widest text-[#E6E9EF]/80">
+          <span
+            className="h-1.5 w-1.5 rounded-full"
+            style={{ background: 'linear-gradient(135deg, #7C3AED, #22D3EE)' }}
+          />
+          Web Design &amp; Videography Studio
         </div>
       </FadeIn>
 
-      <div className="overflow-hidden mt-6 sm:mt-4 md:-mt-5">
+      <div className="overflow-hidden mt-6 md:mt-8">
         <FadeIn delay={0.15} y={40}>
-          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]">
-            Hi, i&apos;m jack
+          <h1 className="hero-heading font-black uppercase tracking-tight leading-[0.95] text-[13vw] sm:text-[10vw] md:text-[8vw] lg:text-[6.5vw]">
+            Elevate your
+            <br />
+            business online
           </h1>
         </FadeIn>
       </div>
 
-      <Magnet
-        padding={150}
-        strength={3}
-        activeTransition="transform 0.3s ease-out"
-        inactiveTransition="transform 0.6s ease-in-out"
-        className="absolute left-1/2 -translate-x-1/2 z-10 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]"
+      <FadeIn delay={0.35} y={20}>
+        <p className="mt-8 md:mt-10 max-w-2xl text-[#E6E9EF]/70 font-light text-base sm:text-lg md:text-xl leading-relaxed">
+          Elev8 Co. builds high-converting websites and creates scroll-stopping videography that
+          help businesses win more customers.
+        </p>
+      </FadeIn>
+
+      <FadeIn delay={0.5} y={20}>
+        <div className="mt-10 md:mt-12 flex flex-col sm:flex-row items-center gap-4">
+          <PrimaryButton href="#contact">Book a Call</PrimaryButton>
+          <GhostButton href="#services">See Our Services</GhostButton>
+        </div>
+      </FadeIn>
+
+      <motion.div
+        className="absolute bottom-10 text-[#E6E9EF]/50"
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
       >
-        <FadeIn delay={0.6} y={30}>
-          <img
-            src="https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png"
-            alt="Jack portrait"
-            className="w-full h-auto select-none pointer-events-none"
-            draggable={false}
-          />
-        </FadeIn>
-      </Magnet>
-
-      <div className="relative z-20 mt-auto flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10">
-        <FadeIn delay={0.35} y={20}>
-          <p
-            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
-            style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
-          >
-            a 3d creator driven by crafting striking and unforgettable projects
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.5} y={20}>
-          <ContactButton />
-        </FadeIn>
-      </div>
+        <ChevronDown size={28} />
+      </motion.div>
     </section>
   );
 }

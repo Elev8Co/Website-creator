@@ -1,17 +1,25 @@
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import HeroSection from './sections/HeroSection';
 import MarqueeSection from './sections/MarqueeSection';
-import AboutSection from './sections/AboutSection';
+import StatementSection from './sections/StatementSection';
 import ServicesSection from './sections/ServicesSection';
-import ProjectsSection from './sections/ProjectsSection';
+import ProcessSection from './sections/ProcessSection';
+import WhyUsSection from './sections/WhyUsSection';
+import CTASection from './sections/CTASection';
 
 function App() {
   return (
-    <div className="bg-[#0C0C0C]" style={{ overflowX: 'clip' }}>
+    <div className="bg-[#0A0A0A]" style={{ overflowX: 'clip' }}>
+      <Navbar />
       <HeroSection />
       <MarqueeSection />
-      <AboutSection />
+      <StatementSection />
       <ServicesSection />
-      <ProjectsSection />
+      <ProcessSection />
+      <WhyUsSection />
+      <CTASection />
+      <Footer />
     </div>
   );
 }
